@@ -1,7 +1,7 @@
 <?php
     require_once($_SERVER['DOCUMENT_ROOT']."/livechat/session.php");
     if(isset($_SESSION['name']) && !empty($_SESSION['name'])){
-        header("Location: ".$_SERVER['DOCUMENT_ROOT']."/livechat/chat.php");
+        header("Location: http://localhost/livechat/chat.php");
     }
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="welcome">
+        <div class="card">
             <h1>Welcome to LiveChat!</h1>
 
 <?php
@@ -39,7 +39,7 @@ if(isset($_POST['username'])){
             $cb = fopen ("log.txt", 'a');
             fwrite ($cb, "<div class='msgln'><i>User " . $_SESSION ['name'] . " has joined the chat session.</i></div>");
             fclose ($cb);
-            header("Location: ".$_SERVER['DOCUMENT_ROOT']."/livechat/chat.php");
+            header("Location: http://localhost/livechat/chat.php");
         }
         catch(Exception $e){
             echo "Error in logging in user. Please try again.";
