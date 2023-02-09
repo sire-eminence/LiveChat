@@ -15,7 +15,7 @@ button{
     cursor:pointer;
 }
 
-.welcome{
+.card, .chat-card{
     max-width:450px;
     margin:auto;
     padding:10px;
@@ -24,13 +24,19 @@ button{
     min-height:100vh;
 }
 
-.welcome h1{
+.card h1{
     margin:40px 0;
     padding:10px 0;
     border-bottom:1px dotted #0D1821;
 }
 
-.welcome p{
+.chat-card h1{
+    margin:10px 0;
+    padding:5px 0;
+    border-bottom:1px dotted #0D1821;
+}
+
+.card p{
     font-weight:bold;
     margin-bottom:20px;
 }
@@ -58,6 +64,51 @@ button{
     font-weight:bold;
 }
 
-.msgln{
+.wlc{
+    font-weight:bold;
     margin-bottom:5px;
+}
+
+.wlc span{
+    color:#09018F;
+}
+
+.out{
+    width:80px;
+    color:#FFF;
+    background:#C84448;
+    border-radius:10px;
+    margin:auto;
+    padding:5px 0;
+    margin-bottom:5px;
+    cursor:pointer;
+}
+
+.msgln{
+    margin-bottom:10px;
+}
+
+.msgPane{
+    height:450px;
+    background:#FFF;
+    padding:10px;
+    text-align:left;
+    font-size:15px;
+    border-radius:5px;
+    overflow-y:auto;
+}
+
+.msgForm{
+    display:flex;
+    margin-top:5px;
+}
+
+.msgForm input{
+    width:100%;
+    padding:5px;
+}
+
+.msgForm .submit{
+    width:70px;
+    flex-shrink:0;
 }
