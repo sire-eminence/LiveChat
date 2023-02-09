@@ -1,1 +1,63 @@
+*{
+    scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    background:#DDD;
+    font-size:14px;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+button{
+    cursor:pointer;
+}
+
+.welcome{
+    max-width:450px;
+    margin:auto;
+    padding:10px;
+    text-align:center;
+    background:#26AF9C;
+    min-height:100vh;
+}
+
+.welcome h1{
+    margin:40px 0;
+    padding:10px 0;
+    border-bottom:1px dotted #0D1821;
+}
+
+.welcome p{
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.resp{
+    border:2px solid #C84448;
+    background:#FDE9E9;
+    color:#C84448;
+    padding:10px;
+    border-radius:5px;
+}
+
+.username{
+    padding:10px;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.submit{
+    width:100%;
+    padding:10px;
+    background:#C84448;
+    border:2px solid #C84448;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.msgln{
+    margin-bottom:5px;
+}
