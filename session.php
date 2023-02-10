@@ -9,6 +9,7 @@ date_default_timezone_set("Africa/Lagos");
 if(session_status() == PHP_SESSION_NONE){
 	session_start();
 }
+
 session_regenerate_id();
 ob_start();
 ?>
